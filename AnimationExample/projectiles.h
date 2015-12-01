@@ -2,12 +2,12 @@
 #include "GameObject.h"
 #include "GameState.h"
 
-
+//Player Bullet Logic
 class Projectile : public Player
 {
 public:
-	float velx, vely; // velocity of our bullet
-	float lifetime; // how long it lasts
+	float velx, vely; 
+	float lifetime; 
 
 	Projectile(float a_x, float a_y, float dx, float dy, float lifespan)
 	{
@@ -24,23 +24,26 @@ public:
 
 	}
 	
+	//What happens to the bullet on collision
 	virtual void onCollision(GameObject &go, float distance)
 	{
 		isActive = false;
 	}
-
+	
+	//bullet movement
 	virtual void update()
 	{
 		
 		lifetime -= sfw::getDeltaTime();
-		isActive = lifetime > 0; // the bullet is no longer active when the lifetime reduces to 0
+		isActive = lifetime > 0; 
 
-								 // Euler Integration to move our bullet
+								 
 		x += velx * sfw::getDeltaTime();
 		y += vely * sfw::getDeltaTime();
 		
 	}
 
+	//Draw the bullet
 	virtual void draw()
 	{
 	

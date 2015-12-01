@@ -1,13 +1,22 @@
-﻿  main.cpp
-c:\users\kevin\documents\visual studio 2015\projects\savingbobdebug\animationexample\main.cpp(1): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
-  collision.cpp
-c:\users\kevin\documents\visual studio 2015\projects\savingbobdebug\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
-  Player.cpp
-c:\users\kevin\documents\visual studio 2015\projects\savingbobdebug\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
-  Menu.cpp
-c:\users\kevin\documents\visual studio 2015\projects\savingbobdebug\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
-  Enemy.cpp
-c:\users\kevin\documents\visual studio 2015\projects\savingbobdebug\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
-  AssetLibrary.cpp
-c:\users\kevin\documents\visual studio 2015\projects\savingbobdebug\animationexample\assetlibrary.cpp(2): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
-  Generating Code...
+﻿Build started 12/1/2015 8:54:59 AM.
+     1>Project "C:\Users\kevin.moore\Documents\Visual Studio 2015\Projects\SavingBob\AnimationExample\AnimationExample.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt AssetLibrary.cpp Enemy.cpp Menu.cpp Player.cpp collision.cpp main.cpp
+         main.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\main.cpp(1): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
+         collision.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
+         Player.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
+         Menu.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
+         Enemy.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gameobject.h(3): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
+         AssetLibrary.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\assetlibrary.cpp(2): fatal error C1083: Cannot open include file: 'sfwdraw.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\kevin.moore\Documents\Visual Studio 2015\Projects\SavingBob\AnimationExample\AnimationExample.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.87

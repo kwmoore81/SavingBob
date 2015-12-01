@@ -2,13 +2,13 @@
 #include "GameObject.h"
 #include "GameState.h"
 
-
+//Enemy Bullet Logic
 class eProjectile : public Player
 
 {
 public:
-	float velx, vely; // velocity of our bullet
-	float lifetime; // how long it lasts
+	float velx, vely; 
+	float lifetime; 
 
 	eProjectile(float a_x, float a_y, float dx, float dy, float lifespan)
 	{
@@ -25,6 +25,7 @@ public:
 
 	}
 
+	//Bullet Collision
 	virtual void onCollision(GameObject &go, float distance)
 	{
 		isActive = false;
@@ -34,14 +35,14 @@ public:
 	{
 
 		lifetime -= sfw::getDeltaTime();
-		isActive = lifetime > 0; // the bullet is no longer active when the lifetime reduces to 0
+		isActive = lifetime > 0; 
 
-								 // Euler Integration to move our bullet
 		x += velx * sfw::getDeltaTime();
 		y += vely * sfw::getDeltaTime();
 
 	}
 
+	//Draw the Bullets
 	virtual void draw()
 	{
 

@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "Enemy.h"
 
+//Player Update Logic
 void Player::update()
 
 	{
@@ -11,29 +12,24 @@ void Player::update()
 		fireDelay -= sfw::getDeltaTime();
 		eFireDelay -= sfw::getDeltaTime();
 		
-		// example of switching between animations
+		//Fire!!!
 		if (sfw::getKey(257) && fireDelay < 0)
 		{
 			fireDelay = rateOfFire;
-			gs()->makeBullet(x, y, 800, 0, 4.f); // Now we can use this to draw stuff!
+			gs()->makeBullet(x, y, 800, 0, 4.f);
 		}
 		if (eFireDelay < 0)
 		{
 			eFireDelay = eRateOfFire;
-			gs()->makeEnemy(850, randY , -100, 0, 10.f); // Now we can use this to draw stuff!
+			gs()->makeEnemy(850, randY , -100, 0, 10.f); 
 		}
 		
-
+		//Player Animation
 		animTimer += sfw::getDeltaTime();
 		currentFrame = sampleAnimation(textureName, animationName, animTimer);
-		//GameObject::update();
-		/*if (animTimer > getAnimationDuration(textureName, animationName))
-		{
-			animTimer = 0;
-			animationName = "Thrusters";
-		}*/
 		
 
+		//Player Movment
 		sdt = sfw::getDeltaTime() * speed;
 		if (sfw::getKey('W')) y += sdt * 3;
 		if (sfw::getKey('S')) y -= sdt * 3;

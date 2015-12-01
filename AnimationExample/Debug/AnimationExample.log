@@ -1,1 +1,22 @@
-﻿  AnimationExample.vcxproj -> C:\Users\Kevin\Documents\Visual Studio 2015\Projects\SavingBobDebug\Debug\AnimationExample.exe
+﻿Build started 12/1/2015 8:59:23 AM.
+     1>Project "C:\Users\kevin.moore\Documents\Visual Studio 2015\Projects\SavingBob\AnimationExample\AnimationExample.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kevin.moore\Documents\Visual Studio 2015\Projects\SavingBob\nsfw2draw" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\player.h(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(52): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(66): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(81): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(118): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(127): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(143): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(149): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(185): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(189): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gamestate.h(209): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\kevin.moore\documents\visual studio 2015\projects\savingbob\animationexample\gameover.h(36): error C3861: 'main': identifier not found
+     1>Done Building Project "C:\Users\kevin.moore\Documents\Visual Studio 2015\Projects\SavingBob\AnimationExample\AnimationExample.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.45

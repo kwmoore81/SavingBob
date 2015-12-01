@@ -1,6 +1,6 @@
 #pragma once
 #include "Background.h"
-
+//Main Menu
 class MenuState 
 {
 	Space space1;
@@ -30,6 +30,7 @@ public:
 
 	virtual void update();
 
+	//Main Menu Assets
 	void draw()
 	{
 		space1.draw();

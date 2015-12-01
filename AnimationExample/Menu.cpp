@@ -3,6 +3,7 @@
 
 #include "Globals.h"
 
+//Main Menu Updates
 void MenuState::update()
 {
 		space1.update();
@@ -15,6 +16,8 @@ void MenuState::update()
 		exit.update();
 		credits.update();
 		planetBob.update();
+
+		//Button logic
 		if (sfw::getMouseButton(MOUSE_BUTTON_LEFT))
 		{
 			if (sfw::getMouseX() < play.x + 64 && sfw::getMouseX() > play.x - 64 && sfw::getMouseY() < play.y + 64 && sfw::getMouseY() > play.y - 64)

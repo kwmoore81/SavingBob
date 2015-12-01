@@ -6,7 +6,7 @@
 #include "eProjectiles.h"
 
 
-
+//Logic for the Player
 class Enemy : public Player
 {
 public:
@@ -31,7 +31,7 @@ public:
 
 	}
 
-
+	//Player Collision
 	virtual void onCollision(GameObject &go, float distance)
 	{
 

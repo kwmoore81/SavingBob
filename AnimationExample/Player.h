@@ -2,7 +2,7 @@
 #include "GameObject.h"
 #include "time.h"
 
-
+//Player Logic
 class Player : public GameObject
 {
 public:
@@ -15,6 +15,7 @@ public:
 	float eBFireDelay;
 	float sdt;
 	
+	//Player and bullet speed logic
 	Player() : speed(100), rateOfFire(0.4f), fireDelay(0.f), eRateOfFire(1.5f), eFireDelay(0.f), eBRateOfFire(3.f), eBFireDelay(0.f)
 	{
 		x = 150; y = 300; width = 128; height = 128; centered = true; color = WHITE;
@@ -23,6 +24,7 @@ public:
 		srand(time(NULL));
 	}
 	
+	//Player Collision
 	virtual void onCollision(GameObject &go, float distance)
 	{
 		if (x > 745){x = 744;}

@@ -4,7 +4,7 @@
 #include "projectiles.h"
 #include "eProjectiles.h"
 
-
+//Enemy logic Updates
 void Enemy::update()
 {
 	eBFireDelay -= sfw::getDeltaTime();
@@ -22,11 +22,12 @@ void Enemy::update()
 
 	x--;
 
+	//Make a bullet only hit once
 	if (eBFireDelay < 0 && textureName != "Explosion")
 	{
 		
 		eBFireDelay = eBRateOfFire;
-		gs()->makeEBullet(x - 100, y - 4, -400, 0, 4.f); // Now we can use this to draw stuff!
+		gs()->makeEBullet(x - 100, y - 4, -400, 0, 4.f); 
 	}
 }
 

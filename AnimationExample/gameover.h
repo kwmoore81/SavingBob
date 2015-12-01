@@ -4,6 +4,7 @@
 #include "Menu.h"
 
 
+//The Game Over Screen
 class GameOverPG
 {
 
@@ -18,6 +19,7 @@ public:
 
 	}
 
+	//Logic for the Button Updates
 	void update()
 	{
 		back.update();
@@ -33,12 +35,13 @@ public:
 			if (sfw::getMouseX() < exit.x + 64 && sfw::getMouseX() > exit.x - 64 && sfw::getMouseY() < exit.y + 64 && sfw::getMouseY() > exit.y - 64)
 			{
 				menuSelection = 4;
+				
 			}
 		}
 		
 	}
 	
-	
+	//Draw Textures
 	virtual void draw()
 	{
 		gameoverBG.draw();

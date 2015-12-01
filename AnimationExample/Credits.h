@@ -2,7 +2,7 @@
 #include "Background.h"
 #include "Globals.h"
 
-
+//the Credits Page
 class CreditsPage 
 {
 	
